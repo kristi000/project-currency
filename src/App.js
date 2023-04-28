@@ -14,14 +14,7 @@ function App() {
   const [amount, setAmount] = useState(1)
   const [amountInFromCurrency, setAmountInFromCurrency] = useState()
 
-  let toAmount, fromAmount
-  if (amountInFromCurrency) {
-    fromAmount = amount
-    toAmount = amount * fromExchangeRate
-  } else {
-    toAmount = amount
-    fromAmount = amount / fromExchangeRate
-  }
+  
 
   useEffect(() => {
     const myHeaders = new Headers()
